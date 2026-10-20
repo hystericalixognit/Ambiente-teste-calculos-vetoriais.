@@ -26,29 +26,29 @@ direction = global.ang_teta;
 
 #region movimento
 //criando movimento para o player
-velocidade = 5;
+//velocidade = 5;
 if(keyboard_check(ord("D")))
 {
-	x += velocidade
+	x += velocidade_;
 }
 if(keyboard_check(ord("A")))
 {
-	x -= velocidade	
+	x -= velocidade_;
 }
 if(keyboard_check(ord("W")))
 {
-	y -= velocidade;
+	y -= velocidade_;
 }
 if(keyboard_check(ord("S")))
 {
-	y += velocidade;
+	y += velocidade_;
 }
 #endregion
 
 #region mecânica de tiro
-if(keyboard_check_pressed(vk_space))
+if(keyboard_check_pressed(vk_space) or mouse_check_button_pressed(mb_left))
 {
-	instance_create_layer(x, y, "instances", tiro__)
+	instance_create_layer(x, y, "instances", tiro__);
 }
 #endregion
 

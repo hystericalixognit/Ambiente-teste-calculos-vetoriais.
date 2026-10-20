@@ -35,6 +35,7 @@
   },
   "name":"projeto Modulo Atividades",
   "resources":[
+    {"id":{"name":"distanciometro","path":"objects/distanciometro/distanciometro.yy",},},
     {"id":{"name":"inimigo1","path":"objects/inimigo1/inimigo1.yy",},},
     {"id":{"name":"obj_att00","path":"objects/obj_att00/obj_att00.yy",},},
     {"id":{"name":"obj_att01","path":"objects/obj_att01/obj_att01.yy",},},
@@ -51,6 +52,7 @@
     {"id":{"name":"testes","path":"rooms/testes/testes.yy",},},
     {"id":{"name":"spr_inimigo1","path":"sprites/spr_inimigo1/spr_inimigo1.yy",},},
     {"id":{"name":"spr_jogador","path":"sprites/spr_jogador/spr_jogador.yy",},},
+    {"id":{"name":"spr_telecalcdist","path":"sprites/spr_telecalcdist/spr_telecalcdist.yy",},},
     {"id":{"name":"spr_tiro__","path":"sprites/spr_tiro__/spr_tiro__.yy",},},
   ],
   "resourceType":"GMProject",
