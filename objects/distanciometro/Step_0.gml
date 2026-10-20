@@ -5,7 +5,7 @@ if(instance_number(obj_player__) >= 1)
 	yf = obj_player__.y;
 	
 	distancia = sqrt(power((xf - x),2) + power((yf - y), 2));
-	show_debug_message(distancia);
+	//show_debug_message(distancia);
 	
 	if(distancia < global.raio)
 	{
