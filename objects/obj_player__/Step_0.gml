@@ -7,18 +7,22 @@ dy = y_mouse - y; //y - y0
 
 cos_ = (dx)/ sqrt(power(dx, 2) + power(dy, 2))
 
-global.ang_teta = radtodeg(arccos(cos_)) //Transfoma radiano em grau...
+if not ((x_mouse == x) and (y_mouse == y)) //corrigindo bugs
+{
+	global.ang_teta = radtodeg(arccos(cos_)) //Transfoma radiano em grau...
+}
 
+//global.ang_teta = radtodeg(arccos(cos_)) //Transfoma radiano em grau...
 
 if(y_mouse > y) // para funcionar no 3° e 4° quadrante
 {
 	global.ang_teta *= -1;
 }
-show_debug_message(global.ang_teta)
+
+//show_debug_message(global.ang_teta)
 image_angle = global.ang_teta; //iguala a rotação do player.
 direction = global.ang_teta;
 #endregion
-
 
 #region movimento
 //criando movimento para o player
@@ -41,7 +45,6 @@ if(keyboard_check(ord("S")))
 }
 #endregion
 
-
 #region mecânica de tiro
 if(keyboard_check_pressed(vk_space))
 {
@@ -55,7 +58,7 @@ if(x > room_width - 32)
 	
 	x = room_width - 32
 }
-if(x <= 0)
+if(x <= 32)
 {
 	x = 32
 }
@@ -63,7 +66,7 @@ if(y > room_height - 32)
 {
 	y = room_height - 32
 }
-if(y <= 0)
+if(y <= 32)
 {
 	y = 32;
 }

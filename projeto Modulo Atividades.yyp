@@ -51,7 +51,7 @@
     {"id":{"name":"testes","path":"rooms/testes/testes.yy",},},
     {"id":{"name":"spr_inimigo1","path":"sprites/spr_inimigo1/spr_inimigo1.yy",},},
     {"id":{"name":"spr_jogador","path":"sprites/spr_jogador/spr_jogador.yy",},},
-    {"id":{"name":"Sprite3","path":"sprites/Sprite3/Sprite3.yy",},},
+    {"id":{"name":"spr_tiro__","path":"sprites/spr_tiro__/spr_tiro__.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
