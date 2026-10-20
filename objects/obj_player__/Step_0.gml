@@ -2,10 +2,10 @@
 #region direção do mouse.
 x_mouse = mouse_x; //posição x mouse
 y_mouse = mouse_y; //posição y do mouse
-dx = x_mouse - x // x - xo
-dy = y_mouse - y; //y - y0
+Cateto_adjacente = x_mouse - x // x - xo
+Cateto_oposto = y_mouse - y; //y - y0
 
-cos_ = (dx)/ sqrt(power(dx, 2) + power(dy, 2))
+cos_ = (Cateto_adjacente) / sqrt(power(Cateto_adjacente, 2) + power(Cateto_oposto, 2))
 
 if not ((x_mouse == x) and (y_mouse == y)) //corrigindo bugs
 {
