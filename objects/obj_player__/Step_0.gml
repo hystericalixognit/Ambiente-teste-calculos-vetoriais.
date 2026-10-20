@@ -11,14 +11,12 @@ if not ((x_mouse == x) and (y_mouse == y)) //corrigindo bugs
 {
 	global.ang_teta = radtodeg(arccos(cos_)) //Transfoma radiano em grau...
 }
-
 //global.ang_teta = radtodeg(arccos(cos_)) //Transfoma radiano em grau...
 
 if(y_mouse > y) // para funcionar no 3° e 4° quadrante
 {
 	global.ang_teta *= -1;
 }
-
 //show_debug_message(global.ang_teta)
 image_angle = global.ang_teta; //iguala a rotação do player.
 direction = global.ang_teta;
